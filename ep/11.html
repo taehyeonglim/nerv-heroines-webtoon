@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ep.11 패턴의 발견 · NERV Heroines Webtoon</title>
+<meta name="description" content="메타 코미디 4컷 연재 — 매 6시간마다 자동 발행되는 NERV 시스템 7 캐릭터 4컷 웹툰.">
+<meta property="og:title" content="Ep.11 패턴의 발견">
+<meta property="og:description" content="메타 코미디 4컷 연재">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../images/ep0011_2026-04-23.png">
+<link rel="canonical" href="../ep/11.html">
+<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html" class="brand">
+    <span class="brand-logo">◆ NERV</span>
+    <span class="brand-title">HEROINES WEBTOON</span>
+  </a>
+  <nav class="site-nav">
+    <a href="../index.html">목록</a>
+<a href="../ep/17.html">최신화</a>    <a href="../ep/1.html">1화부터</a>
+  </nav>
+</header>
+
+<main class="site-main">
+<article class="episode-reader" data-ep="11"
+data-prev="10"data-next="12">
+  <header class="reader-header">
+    <a class="back-link" href="../index.html">← 목록</a>
+    <div class="reader-title-row">
+      <span class="ep-badge-lg">EP.011</span>
+      <h1 class="reader-title">패턴의 발견</h1>
+    </div>
+    <div class="reader-meta">
+      <span class="reader-date">2026-04-23</span>
+      <span class="reader-cast">
+          <span class="cast-chip" style="--chip-color: #87CEEB">
+            <span class="chip-dot"></span>🧠 아야나미 레이
+          </span>
+          <span class="cast-chip" style="--chip-color: #FF0000">
+            <span class="chip-dot"></span>📊 소류 아스카 랑그레이
+          </span>
+      </span>
+    </div>
+    <p class="reader-synopsis">점심시간, 아스카가 자기 에이전트를 동생 자랑하듯 떠들다 레이의 note-linker가 자신을 '완벽주의 패턴'으로 분류했음을 발견한다</p>
+  </header>
+
+  <div class="reader-canvas">
+    <img class="reader-strip" src="../images/ep0011_2026-04-23.png"
+         alt="Ep.11 패턴의 발견">
+  </div>
+
+  <nav class="reader-nav">
+    <a class="nav-btn nav-prev" href="10.html"
+       title="Ep.10 동생들의 점심 평가표">
+      ← 이전화<span class="nav-num">Ep.10</span>
+    </a>
+
+    <a class="nav-btn nav-home" href="../index.html">목록</a>
+
+    <a class="nav-btn nav-next" href="12.html"
+       title="Ep.12 launchd는 제멋대로야">
+      <span class="nav-num">Ep.12</span>다음화 →
+    </a>
+  </nav>
+</article>
+
+<script>
+  (function () {
+    const article = document.querySelector('.episode-reader');
+    const prev = article.dataset.prev;
+    const next = article.dataset.next;
+    document.addEventListener('keydown', (e) => {
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+      if (e.key === 'ArrowLeft' && prev) {
+        window.location.href = prev + '.html';
+      } else if (e.key === 'ArrowRight' && next) {
+        window.location.href = next + '.html';
+      } else if (e.key === 'Escape') {
+        window.location.href = '../index.html';
+      }
+    });
+  })();
+</script>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-line">
+    <span class="footer-brand">NERV · RESEARCH</span>
+    <span class="footer-meta">총 17화 · 6시간 간격 자동 연재 · MAGI 작가단 집필</span>
+  </div>
+  <div class="footer-meta-small">
+    Built 2026-04-23 21:05 KST
+  </div>
+</footer>
+</body>
+</html>

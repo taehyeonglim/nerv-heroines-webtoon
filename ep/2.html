@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ep.2 첫 아침의 작전 · NERV Heroines Webtoon</title>
+<meta name="description" content="메타 코미디 4컷 연재 — 매 6시간마다 자동 발행되는 NERV 시스템 7 캐릭터 4컷 웹툰.">
+<meta property="og:title" content="Ep.2 첫 아침의 작전">
+<meta property="og:description" content="메타 코미디 4컷 연재">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../images/ep0002_2026-04-23.png">
+<link rel="canonical" href="../ep/2.html">
+<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html" class="brand">
+    <span class="brand-logo">◆ NERV</span>
+    <span class="brand-title">HEROINES WEBTOON</span>
+  </a>
+  <nav class="site-nav">
+    <a href="../index.html">목록</a>
+<a href="../ep/17.html">최신화</a>    <a href="../ep/1.html">1화부터</a>
+  </nav>
+</header>
+
+<main class="site-main">
+<article class="episode-reader" data-ep="2"
+data-prev="1"data-next="3">
+  <header class="reader-header">
+    <a class="back-link" href="../index.html">← 목록</a>
+    <div class="reader-title-row">
+      <span class="ep-badge-lg">EP.002</span>
+      <h1 class="reader-title">첫 아침의 작전</h1>
+    </div>
+    <div class="reader-meta">
+      <span class="reader-date">2026-04-23</span>
+      <span class="reader-cast">
+          <span class="cast-chip" style="--chip-color: #4169E1">
+            <span class="chip-dot"></span>🎯 아카기 리츠코
+          </span>
+          <span class="cast-chip" style="--chip-color: #FF4500">
+            <span class="chip-dot"></span>📄 카츠라기 미사토
+          </span>
+      </span>
+    </div>
+    <p class="reader-synopsis">리츠코가 새 웹툰 채널 런칭 공지를 보고 묘한 기분에 잠기자, 미사토가 커피로 위로한다</p>
+  </header>
+
+  <div class="reader-canvas">
+    <img class="reader-strip" src="../images/ep0002_2026-04-23.png"
+         alt="Ep.2 첫 아침의 작전">
+  </div>
+
+  <nav class="reader-nav">
+    <a class="nav-btn nav-prev" href="1.html"
+       title="Ep.1 03시 17분의 시">
+      ← 이전화<span class="nav-num">Ep.1</span>
+    </a>
+
+    <a class="nav-btn nav-home" href="../index.html">목록</a>
+
+    <a class="nav-btn nav-next" href="3.html"
+       title="Ep.3 오늘의 커밋 메시지">
+      <span class="nav-num">Ep.3</span>다음화 →
+    </a>
+  </nav>
+</article>
+
+<script>
+  (function () {
+    const article = document.querySelector('.episode-reader');
+    const prev = article.dataset.prev;
+    const next = article.dataset.next;
+    document.addEventListener('keydown', (e) => {
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+      if (e.key === 'ArrowLeft' && prev) {
+        window.location.href = prev + '.html';
+      } else if (e.key === 'ArrowRight' && next) {
+        window.location.href = next + '.html';
+      } else if (e.key === 'Escape') {
+        window.location.href = '../index.html';
+      }
+    });
+  })();
+</script>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-line">
+    <span class="footer-brand">NERV · RESEARCH</span>
+    <span class="footer-meta">총 17화 · 6시간 간격 자동 연재 · MAGI 작가단 집필</span>
+  </div>
+  <div class="footer-meta-small">
+    Built 2026-04-23 21:05 KST
+  </div>
+</footer>
+</body>
+</html>

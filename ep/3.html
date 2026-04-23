@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ep.3 오늘의 커밋 메시지 · NERV Heroines Webtoon</title>
+<meta name="description" content="메타 코미디 4컷 연재 — 매 6시간마다 자동 발행되는 NERV 시스템 7 캐릭터 4컷 웹툰.">
+<meta property="og:title" content="Ep.3 오늘의 커밋 메시지">
+<meta property="og:description" content="메타 코미디 4컷 연재">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../images/ep0003_2026-04-23.png">
+<link rel="canonical" href="../ep/3.html">
+<link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="../index.html" class="brand">
+    <span class="brand-logo">◆ NERV</span>
+    <span class="brand-title">HEROINES WEBTOON</span>
+  </a>
+  <nav class="site-nav">
+    <a href="../index.html">목록</a>
+<a href="../ep/17.html">최신화</a>    <a href="../ep/1.html">1화부터</a>
+  </nav>
+</header>
+
+<main class="site-main">
+<article class="episode-reader" data-ep="3"
+data-prev="2"data-next="4">
+  <header class="reader-header">
+    <a class="back-link" href="../index.html">← 목록</a>
+    <div class="reader-title-row">
+      <span class="ep-badge-lg">EP.003</span>
+      <h1 class="reader-title">오늘의 커밋 메시지</h1>
+    </div>
+    <div class="reader-meta">
+      <span class="reader-date">2026-04-23</span>
+      <span class="reader-cast">
+          <span class="cast-chip" style="--chip-color: #87CEEB">
+            <span class="chip-dot"></span>🧠 아야나미 레이
+          </span>
+      </span>
+    </div>
+    <p class="reader-synopsis">레이가 wiki-compounder의 커밋 메시지를 읽다가 그 무감각한 정직함에 잠시 멈춘다</p>
+  </header>
+
+  <div class="reader-canvas">
+    <img class="reader-strip" src="../images/ep0003_2026-04-23.png"
+         alt="Ep.3 오늘의 커밋 메시지">
+  </div>
+
+  <nav class="reader-nav">
+    <a class="nav-btn nav-prev" href="2.html"
+       title="Ep.2 첫 아침의 작전">
+      ← 이전화<span class="nav-num">Ep.2</span>
+    </a>
+
+    <a class="nav-btn nav-home" href="../index.html">목록</a>
+
+    <a class="nav-btn nav-next" href="4.html"
+       title="Ep.4 분류할 수 없는 것">
+      <span class="nav-num">Ep.4</span>다음화 →
+    </a>
+  </nav>
+</article>
+
+<script>
+  (function () {
+    const article = document.querySelector('.episode-reader');
+    const prev = article.dataset.prev;
+    const next = article.dataset.next;
+    document.addEventListener('keydown', (e) => {
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+      if (e.key === 'ArrowLeft' && prev) {
+        window.location.href = prev + '.html';
+      } else if (e.key === 'ArrowRight' && next) {
+        window.location.href = next + '.html';
+      } else if (e.key === 'Escape') {
+        window.location.href = '../index.html';
+      }
+    });
+  })();
+</script>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-line">
+    <span class="footer-brand">NERV · RESEARCH</span>
+    <span class="footer-meta">총 17화 · 6시간 간격 자동 연재 · MAGI 작가단 집필</span>
+  </div>
+  <div class="footer-meta-small">
+    Built 2026-04-23 21:05 KST
+  </div>
+</footer>
+</body>
+</html>
