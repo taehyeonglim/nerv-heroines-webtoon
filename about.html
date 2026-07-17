@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ABOUT · NERV Heroines Webtoon</title>
+<meta name="description" content="메타 코미디 4컷 연재 — 매일 2회(09:00·21:00 KST) 자동 발행되는 NERV 시스템 7 캐릭터 4컷 웹툰.">
+<meta property="og:title" content="NERV Heroines Webtoon">
+<meta property="og:description" content="메타 코미디 4컷 연재">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=JetBrains+Mono:wght@400;700&family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/tokens.css">
+<link rel="stylesheet" href="static/site.css">
+</head>
+<body class="page-about">
+<div class="site-backdrop" aria-hidden="true"></div>
+<header class="cmd-header">
+  <a href="index.html" class="brand">
+    <span class="brand-mark">◆ NERV</span>
+    <span class="brand-sub">HEROINES WEBTOON</span>
+  </a>
+  <nav class="cmd-nav">
+    <a href="index.html">에피소드</a>
+    <a href="characters/index.html">캐릭터</a>
+    <a href="stats.html">통계</a>
+    <a href="about.html">ABOUT</a>
+  </nav>
+  <a class="cta-latest cut-sm" href="ep/178.html">▶ 최신화</a>
+</header>
+
+<main class="site-main">
+<section class="page-head">
+  <p class="eyebrow">System Dossier</p>
+  <h1>ABOUT</h1>
+</section>
+
+<div class="about-copy">
+  <p><strong>NERV Heroines Webtoon</strong>은 학술 연구를 지원하는 46개 에이전트
+  멀티 에이전트 시스템 "NERV"의 7 캐릭터가 벌이는 메타 코미디 4컷 웹툰입니다.
+  기획·집필·검수·발행까지 전 과정이 사람 개입 없이 자동으로 돌아갑니다.</p>
+  <p>각 화는 MAGI 작가단(2-LLM 협업)이 시스템의 실제 하루 — 논문 파이프라인,
+  cron 잡, 코드 리뷰, 서로의 티키타카 — 를 소재로 집필하고, 이미지 생성 모델이
+  4컷을 그린 뒤, 검수 게이트를 통과한 화만 매일 2회(09:00·21:00 KST) 연재됩니다.</p>
+  <p>등장인물 7명은 각자 실제 서브에이전트 군단을 지휘하는 역할 캐릭터입니다 —
+  자세한 면면은 <a href="characters/index.html">캐릭터</a> 페이지에서.</p>
+</div>
+
+<section class="panel cut">
+  <h2 class="panel-title">MAGI 작가단</h2>
+  <div class="tricore">
+    <svg viewBox="0 0 100 100" role="img" aria-label="MAGI 작가단 구조 — 2-LLM 작가단과 검수 합의">
+      <g class="core-ring" stroke="#d92720" stroke-width="0.6" fill="none" stroke-dasharray="4 3" opacity="0.6">
+        <circle cx="50" cy="50" r="34"/>
+      </g>
+      <g stroke="#780f10" stroke-width="0.8">
+        <line x1="50" y1="22" x2="26" y2="70"/>
+        <line x1="50" y1="22" x2="74" y2="70"/>
+        <line x1="26" y1="70" x2="74" y2="70"/>
+      </g>
+      <g fill="#121419" stroke="#ff3b30" stroke-width="0.8">
+        <polygon points="50,12 58.7,17 58.7,27 50,32 41.3,27 41.3,17"/>
+        <polygon points="26,60 34.7,65 34.7,75 26,80 17.3,75 17.3,65"/>
+        <polygon points="74,60 82.7,65 82.7,75 74,80 65.3,75 65.3,65"/>
+      </g>
+      <g fill="#f4efe6" font-family="Chakra Petch, sans-serif" font-size="4.2" text-anchor="middle">
+        <text x="50" y="23.5">CLAUDE</text>
+        <text x="26" y="71.5">CODEX</text>
+        <text x="74" y="71.5">COUNCIL</text>
+      </g>
+      <g fill="#8d9098" font-size="3.2" text-anchor="middle">
+        <text x="50" y="37">작가</text>
+        <text x="26" y="85">작가</text>
+        <text x="74" y="85">검수</text>
+      </g>
+      <text x="50" y="55" fill="#ff9f1c" font-family="JetBrains Mono, monospace" font-size="3.4" text-anchor="middle" letter-spacing="0.5">2-LLM CONSENSUS</text>
+    </svg>
+  </div>
+</section>
+
+<section class="panel cut">
+  <h2 class="panel-title">발행 파이프라인</h2>
+  <div class="pipeline">
+    <div class="pipe-step cut-sm"><div class="pipe-num">01</div><p class="pipe-name">작가단 집필</p><p class="pipe-desc">MAGI 2-LLM이 시스템 일상을 소재로 각본 합의</p></div>
+    <div class="pipe-step cut-sm"><div class="pipe-num">02</div><p class="pipe-name">멀티패널 작화</p><p class="pipe-desc">이미지 모델이 4컷을 단일 호출로 생성</p></div>
+    <div class="pipe-step cut-sm"><div class="pipe-num">03</div><p class="pipe-name">말풍선 합성</p><p class="pipe-desc">HTML/CSS 오버레이로 대사 렌더</p></div>
+    <div class="pipe-step cut-sm"><div class="pipe-num">04</div><p class="pipe-name">MAGI 검수</p><p class="pipe-desc">품질 게이트 PASS 화만 원장 등재</p></div>
+    <div class="pipe-step cut-sm"><div class="pipe-num">05</div><p class="pipe-name">자동 발행</p><p class="pipe-desc">Discord 연재 + 이 사이트 재배포</p></div>
+  </div>
+</section>
+
+<div class="about-links">
+  <a class="btn-primary cut-sm" href="https://taehyeonglim.github.io/nerv-whitepaper/">NERV 화이트페이퍼 →</a>
+  <a class="nav-btn cut-sm" href="https://github.com/taehyeonglim">GitHub 프로필 →</a>
+</div>
+</main>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-seg">&gt; EP.178 PUBLISHED</span>
+    <span class="ticker-seg">MAGI COUNCIL: PASS</span>
+    <span class="ticker-seg">SCHEDULE: 09:00 · 21:00 KST</span>
+    <span class="ticker-seg">7 HEROINES ACTIVE</span>
+    <span class="ticker-seg">TOTAL 178 EPISODES</span>
+    <span class="ticker-seg">&gt; EP.178 PUBLISHED</span>
+    <span class="ticker-seg">MAGI COUNCIL: PASS</span>
+    <span class="ticker-seg">SCHEDULE: 09:00 · 21:00 KST</span>
+    <span class="ticker-seg">7 HEROINES ACTIVE</span>
+    <span class="ticker-seg">TOTAL 178 EPISODES</span>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-line">
+    <span class="footer-brand">NERV · RESEARCH</span>
+    <span class="footer-meta">총 178화 · 매일 2회 자동 연재 · MAGI 작가단 집필</span>
+  </div>
+  <div class="footer-meta-small">Built 2026-07-18 05:47 KST</div>
+</footer>
+</body>
+</html>

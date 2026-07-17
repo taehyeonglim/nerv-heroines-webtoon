@@ -1,0 +1,57 @@
+/* NERV Heroines Webtoon — design tokens (Gen 2 red HUD)
+   2단 매핑: 원시 토큰 → 시맨틱 별칭. magi-tokens.css 패턴의 레드 HUD 판. */
+
+:root {
+  /* 원시 팔레트 */
+  --n-void: #08090b;
+  --n-void-2: #0d0f12;
+  --n-panel: #121419;
+  --n-panel-2: #171a20;
+  --n-ivory: #f4efe6;
+  --n-text: #d8d5ce;
+  --n-muted: #8d9098;
+  --n-dim: #5c6069;
+  --n-red: #d92720;
+  --n-red-bright: #ff3b30;
+  --n-red-deep: #780f10;
+  --n-amber: #ff9f1c;
+  --n-green: #34d399;
+
+  /* 캐릭터 7색 (photocard character_anchors.yaml SSOT) */
+  --c-ritsuko: #4169E1;
+  --c-misato: #FF4500;
+  --c-rei: #87CEEB;
+  --c-asuka: #FF0000;
+  --c-kaoru: #9370DB;
+  --c-mari: #FF69B4;
+  --c-shinji: #4682B4;
+
+  /* 시맨틱 별칭 */
+  --bg: var(--n-void);
+  --bg-soft: var(--n-void-2);
+  --panel: var(--n-panel);
+  --panel-2: var(--n-panel-2);
+  --ink: var(--n-ivory);
+  --text: var(--n-text);
+  --muted: var(--n-muted);
+  --dim: var(--n-dim);
+  --accent: var(--n-red);
+  --accent-hot: var(--n-red-bright);
+  --accent-deep: var(--n-red-deep);
+  --ok: var(--n-green);
+  --warn: var(--n-amber);
+  --line: rgba(244, 239, 230, 0.08);
+  --line-strong: rgba(244, 239, 230, 0.14);
+
+  /* 구조 */
+  --cut: 14px;
+  --cut-sm: 8px;
+  --radius: 4px;
+  --glow-red: 0 0 18px rgba(255, 59, 48, 0.35);
+  --shadow-card: 0 6px 24px rgba(0, 0, 0, 0.55);
+
+  /* 타이포 */
+  --font-display: "Chakra Petch", "Arial Narrow", sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  --font-body: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
