@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- NERV Heroines Webtoon — red HUD favicon: void tile + cut-corner edge + ◆ -->
+  <polygon points="0,0 64,0 64,50 50,64 0,64" fill="#0d0f12"/>
+  <polygon points="64,50 50,64 53,64 64,53" fill="#ff3b30"/>
+  <polygon points="32,14 50,32 32,50 14,32" fill="#ff3b30"/>
+</svg>
