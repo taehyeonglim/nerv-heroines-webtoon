@@ -1,57 +1,70 @@
-/* NERV Heroines Webtoon — design tokens (Gen 2 red HUD)
-   2단 매핑: 원시 토큰 → 시맨틱 별칭. magi-tokens.css 패턴의 레드 HUD 판. */
-
 :root {
-  /* 원시 팔레트 */
-  --n-void: #08090b;
-  --n-void-2: #0d0f12;
-  --n-panel: #121419;
-  --n-panel-2: #171a20;
-  --n-ivory: #f4efe6;
-  --n-text: #d8d5ce;
-  --n-muted: #8d9098;
-  --n-dim: #5c6069;
-  --n-red: #d92720;
-  --n-red-bright: #ff3b30;
-  --n-red-deep: #780f10;
-  --n-amber: #ff9f1c;
-  --n-green: #34d399;
+  --color-void: #08090b;
+  --color-void-d1: #0d0f12;
+  --color-panel: #121419;
+  --color-panel-d1: #171a20;
+  --color-text-primary: #f4efe6;
+  --color-text-secondary: #d8d5ce;
+  --color-text-muted: #8d9098;
+  --color-text-dim: #5c6069;
+  --color-accent-red: #d92720;
+  --color-accent-red-bright: #ff3b30;
+  --color-accent-red-deep: #780f10;
+  --color-accent-amber: #ff9f1c;
+  --color-accent-green: #34d399;
+  --color-accent-violet: #b49cff;
+  --color-accent-blue: #67b7ff;
+  --font-display: "Chakra Petch", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", Menlo, monospace;
+  --font-body: "Noto Sans KR", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-loose: 1.8;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --cut-corner: 14px;
+  --grid-size: 46px;
+  --radius: 8px;
+  --transition-fast: 120ms ease-out;
+  --transition-normal: 280ms ease-out;
+  --transition-slow: 480ms ease-out;
+  --duration-scan: 9s;
+  --duration-ticker: 20s;
+  --duration-pulse: 2s;
+  --duration-blink: 1.6s;
+  --bg-void: var(--color-void);
+  --bg-panel: var(--color-panel);
+  --text-primary: var(--color-text-primary);
+  --text-secondary: var(--color-text-secondary);
+  --text-muted: var(--color-text-muted);
+  --accent: var(--color-accent-red);
+  --accent-bright: var(--color-accent-red-bright);
+}
 
-  /* 캐릭터 7색 (photocard character_anchors.yaml SSOT) */
-  --c-ritsuko: #4169E1;
-  --c-misato: #FF4500;
-  --c-rei: #87CEEB;
-  --c-asuka: #FF0000;
-  --c-kaoru: #9370DB;
-  --c-mari: #FF69B4;
-  --c-shinji: #4682B4;
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background-color: var(--color-void);
+  color: var(--color-text-secondary);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: var(--line-height-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-  /* 시맨틱 별칭 */
-  --bg: var(--n-void);
-  --bg-soft: var(--n-void-2);
-  --panel: var(--n-panel);
-  --panel-2: var(--n-panel-2);
-  --ink: var(--n-ivory);
-  --text: var(--n-text);
-  --muted: var(--n-muted);
-  --dim: var(--n-dim);
-  --accent: var(--n-red);
-  --accent-hot: var(--n-red-bright);
-  --accent-deep: var(--n-red-deep);
-  --ok: var(--n-green);
-  --warn: var(--n-amber);
-  --line: rgba(244, 239, 230, 0.08);
-  --line-strong: rgba(244, 239, 230, 0.14);
-
-  /* 구조 */
-  --cut: 14px;
-  --cut-sm: 8px;
-  --radius: 4px;
-  --glow-red: 0 0 18px rgba(255, 59, 48, 0.35);
-  --shadow-card: 0 6px 24px rgba(0, 0, 0, 0.55);
-
-  /* 타이포 */
-  --font-display: "Chakra Petch", "Arial Narrow", sans-serif;
-  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
-  --font-body: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
